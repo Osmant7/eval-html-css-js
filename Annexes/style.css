@@ -1,0 +1,168 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+}
+#title{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#allButton{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(182,184,182,0.7) ;
+    align-items: center;
+    height: 45px;
+}
+.textuel{
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+}
+
+#selecters{
+    padding-left: 5px;
+    
+    background-color: 1px solid rgba(0,0,0,.125);
+}
+#selected{
+    color: rgb(36,36,36,);
+    padding: 2px;
+    border: none;
+    border-radius: 2px;
+    width: 170px;
+    background-color: rgb(242,242,242);
+}
+
+.allDate{
+    display: flex;
+    align-items: center;
+}
+.fa-calendar-alt{
+    color: grey;
+    padding: 3px;
+}
+.dateButton{
+    height: 28px;
+    background-color: 1px solid rgba(0,0,0,.125);
+    border: none;
+    border-radius: 1px;
+}
+#buttonContainer{
+    height: 250px;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+#valider{
+    background-color:rgba(89,189,115,0.7) ;
+    border: none;
+    height: 45px;
+    padding: 10px;
+    color: white;
+}
+
+/* section */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#priceCroissant{
+    background-color: rgb(245,245,245);
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 4px;
+}
+#mainContainer{
+    margin-top: 10px;
+    width: 95%;
+    height: 900px;
+}
+#headerContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* carousel icon */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}   
+
+.legendeCars >p {
+    font-size: 12px;
+    margin-right: 70px;
+}
+.buttonCars{
+    height: 40px;
+    border: 1px solid rgba(0,0,0,.125);
+    background-color: rgb(77,171,73);
+    color: white;
+    border-radius: 5px;
+}
+
+/* header */
+#agenceImg{
+    height: 85px;
+    width: 105px;
+    margin-top: 2px;
+    
+}
+footer{
+    width: 60%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+#lastP{
+    padding-left: 50px;
+    width: 45%;
+    font-size: 12px;
+}
+#Pariss {
+    font-weight: bold;
+}
+
+@media screen and (max-width : 768px){
+    #allButton{
+        flex-wrap: wrap;
+        width: 85%;
+    }
+    #valider{
+        width: 100%;
+        margin-top: 10px;
+        background-color:rgba(89,189,115,0.9) ;
+    }
+    .legendeCars > p{
+        display: none;
+    }
+    .legendeCars > h2{
+        display: none;
+    }
+    .buttonCars{
+        height: 50px;
+    }
+    section{
+        width: 100%;
+    }
+    footer{
+        display: none;
+    }
+}
